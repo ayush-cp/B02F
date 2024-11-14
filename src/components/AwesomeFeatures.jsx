@@ -29,7 +29,7 @@ const AwesomeFeatures = () => {
   ];
 
   return (
-    <div className="w-full h-[35vh] flex flex-col items-center gap-4">
+    <div id="features" className="w-full h-[35vh] flex flex-col items-center gap-4">
       <div className="flex flex-col items-center">
         <h2 className="font-cormorant font-[700] text-[#201041] text-3xl">
           Awesome Features

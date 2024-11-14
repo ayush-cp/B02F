@@ -40,7 +40,7 @@ const Faqs = () => {
   ];
 
   return (
-    <div className="w-full h-max p-4 bg-white">
+    <div className="w-full h-max p-4 bg-white" id="faqs">
       <div className="w-[90%] h-full  flex flex-col items-center gap-4">
         <div className="w-full text-center">
           <h2 className="font-cormorant font-bold text-4xl text-black">FAQs</h2>

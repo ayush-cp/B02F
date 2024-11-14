@@ -13,7 +13,7 @@ const IeltsPrep = () => {
       </div>
 
 
-      <div className="ml-[5%] h-full md:w-[40%] w-[70%] relative flex flex-col justify-center sm:gap-4 gap-0">
+      <div className="ml-[10%] h-full md:w-[50%] w-[70%] relative flex flex-col justify-center sm:gap-8 gap-0">
         <div className="flex flex-col w-max sm:gap-4 gap-0">
           <span className="font-cormorant font-[700] text-[#9F0D76] md:text-[3rem] text-2xl">IELTS Preparation</span>
           <span className="font-cormorant font-[700] text-[#5A156B] md:text-[3rem] text-2xl">Online Best Learning</span>
@@ -28,7 +28,7 @@ const IeltsPrep = () => {
         </div>
 
         <div className="md:w-full w-[80%] sm:h-[13%] h-[10%] pl-[5%]">
-          <button className="w-[50%] h-[100%] bg-[#5A156B] rounded-[15px] font-cormorant font-[700] text-[#fff] sm:text-2xl text-md transition-all ease-linear duration-300 hover:bg-[#9531af] hover:border-[1px] hover:border-[#712385] hover:shadow-[0px_0px_5px_1px_#5A156B]">Enroll Now</button>
+          <button className="w-[35%] h-[100%] bg-[#5A156B] rounded-[15px] font-cormorant font-[700] text-[#fff] sm:text-2xl text-md transition-all ease-linear duration-300 hover:bg-[#9531af] hover:border-[1px] hover:border-[#712385] hover:shadow-[0px_0px_5px_1px_#5A156B]">Enroll Now</button>
         </div>
       </div>
     </div>

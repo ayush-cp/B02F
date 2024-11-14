@@ -25,7 +25,7 @@ const Footer = () => {
     },
     {
       id: 4,
-      link: "#",
+      link: "#faqs",
       name: "FAQ",
     },
     {
@@ -48,27 +48,27 @@ const Footer = () => {
   const features = [
     {
       id: 1,
-      link: "#",
+      link: "#features",
       name: "Plagiarism Checker",
     },
     {
       id: 2,
-      link: "#",
+      link: "#features",
       name: "Free Publications",
     },
     {
       id: 3,
-      link: "#",
+      link: "#features",
       name: "Provides Books",
     },
     {
       id: 4,
-      link: "#",
+      link: "#features",
       name: "Provides PDF",
     },
     {
       id: 5,
-      link: "#",
+      link: "#features",
       name: "Paraphraser",
     },
   ];
