@@ -8,6 +8,10 @@ export default {
     extend: {
       fontFamily: {
         cormorant: ['"Cormorant"']
+      },
+      backgroundImage: {
+        gradient: ['url("./src/assets/gradient.png")'],
+        footer: ['url("./src/assets/footerImage.png")']
       }
     },
   },
