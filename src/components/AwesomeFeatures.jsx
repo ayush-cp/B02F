@@ -29,26 +29,26 @@ const AwesomeFeatures = () => {
   ];
 
   return (
-    <div id="features" className="w-full h-[35vh] flex flex-col items-center gap-4">
+    <div id="features" className="w-full min-h-[35vh] h-max flex flex-col items-center gap-4">
       <div className="flex flex-col items-center">
-        <h2 className="font-cormorant font-[700] text-[#201041] text-3xl">
+        <h2 className="font-cormorant font-[700] text-[#201041] md:text-3xl sm:text-2xl text-xl">
           Awesome Features
         </h2>
-        <h3 className="font-cormorant font-[500] text-[#000] text-xl">
+        <h3 className="font-cormorant font-[500] text-[#000] md:text-xl sm:text-lg text-md">
           Get ready to unlock the next level of features
         </h3>
       </div>
 
-      <div className="w-[95%] flex flex-row justify-around">
+      <div className="w-[95%] grid md:grid-cols-4 grid-cols-2 justify-between gap-4 place-items-center">
         {data.map((item, index) => {
           return (
-            <div key={index} className="w-[270px] md:min-h-[187px] h-max border-[1px] border-black rounded-[10px] shadow-[0px_8px_16px_0px_#00000033] flex flex-col items-center justify-center gap-4">
+            <div key={index} className="md:w-[90%] w-[95%] md:min-h-[150px] h-[100%] border-[1px] p-2 border-black rounded-[10px] cursor-pointer transition-all ease-linear duration-300 shadow-[0px_8px_16px_0px_#00000033] hover:shadow-[2px_20px_20px_0px_#c2d4f033] flex flex-col items-center justify-start gap-4">
               <img src={item.image} alt={`${item.title}`} className="w-[50px]" />
               <div className="flex flex-col gap-1 items-center">
-              <span className="font-cormorant font-[600] text-[#2E2E3B] text-xl">
+              <span className="font-cormorant font-[600] text-[#2E2E3B] sm:text-xl text-md text-center">
                 {item.title}
               </span>
-              <span className="font-cormorant font-[500] text-[#464657] text-lg text-center">
+              <span className="font-cormorant font-[500] text-[#464657] sm:text-lg md:text-md text-sm text-center">
                 {item.description}
               </span>
               </div>

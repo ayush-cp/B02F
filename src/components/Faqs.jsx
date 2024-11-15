@@ -43,15 +43,15 @@ const Faqs = () => {
     <div className="w-full h-max p-4 bg-white" id="faqs">
       <div className="w-[90%] h-full  flex flex-col items-center gap-4">
         <div className="w-full text-center">
-          <h2 className="font-cormorant font-bold text-4xl text-black">FAQs</h2>
+          <h2 className="font-cormorant font-bold md:text-4xl sm:text-3xl text-xl text-black">FAQs</h2>
         </div>
 
-        <div className="w-[90%] h-max flex flex-col gap-6">
+        <div className="md:w-[90%] w-[100%] h-max flex flex-col items-center gap-6">
           {faqs.map((item) => {
             return (
               <div key={item.id} className=" shadow-[0px_2px_5px_0px_#00000040] cursor-pointer">
-                <div className="w-full h-11 bg-white flex flex-row justify-between items-center px-4" onClick={()=>setActiveId(activeId === item.id? null: item.id)}>
-                  <span className="font-cormorant text-xl text-black font-bold ">
+                <div className="w-full md:h-11 h-[100%] transition-all ease-linear duration-100 bg-white hover:bg-gray-100 flex flex-row justify-between items-center px-4" onClick={()=>setActiveId(activeId === item.id? null: item.id)}>
+                  <span className="font-cormorant md:text-xl sm:text-lg text-sm text-black font-bold ">
                     {item.question}
                   </span>
                   <div className="p-2 cursor-pointer transition-all ease-linear duration-200 hover:bg-gray-200 rounded-full flex justify-center items-center ">
@@ -59,7 +59,7 @@ const Faqs = () => {
                   </div>
                 </div>
 
-                <div className={`${activeId=== item.id?'h-max p-4 ' : 'h-0'} transition-all ease-in-out duration-400 overflow-hidden w-full bg-white border-l-8 border-l-violet-700 `}>
+                <div className={`${activeId=== item.id?'h-max p-4 ' : 'h-0'} font-cormorant font-semibold md:text-xl sm:text-lg text-sm text-black  transition-all ease-in-out duration-400 overflow-hidden w-full bg-white sm:border-l-8 border-l-4 border-l-violet-700 `}>
                   <p>
                   {item.answer}
                   </p>

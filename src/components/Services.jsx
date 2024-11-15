@@ -118,21 +118,21 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full h-max p-4 px-8 bg-white">
+    <div className="w-full h-max md:p-4 md:px-8 p-0 bg-white">
       <div className="w-full h-full bg-[#C414681A] flex flex-col gap-4 py-4 shadow-[0px_4px_4px_0px_#00000040] rounded-[5px]">
         <div className="w-full h-max flex flex-col items-center">
-          <h2 className="font-cormorant font-[700] text-black text-3xl">
+          <h2 className="font-cormorant font-[700] text-black md:text-3xl sm:text-2xl text-xl">
             Our Services
           </h2>
-          <h3 className="font-cormorant font-[600] text-black text-xl">
+          <h3 className="font-cormorant font-[600] text-black md:text-xl sm:text-lg text-md">
             We offer some fantastic services
           </h3>
         </div>
 
-        <div className="w-full h-max grid grid-cols-4 gap-4 place-items-center">
+        <div className="w-full h-max grid md:grid-cols-4 grid-cols-3 px-1 gap-4 place-items-center">
           {services.map((item) => {
             return (
-              <div key={item.id} className="w-[15vw] h-[32vh] bg-white flex flex-col gap-1 rounded-[15px] overflow-hidden">
+              <div key={item.id} className="md:w-[15vw] w-[100%] md:max-h-[32vh] md:min-h-[20vh] md:min-w-[180px] h-[95%] bg-white flex flex-col gap-1 rounded-[15px] overflow-hidden">
                 <div className="w-full h-[70%]">
                   <img
                     src={item.image}
@@ -140,22 +140,22 @@ const Services = () => {
                     className="transition-all ease-in duration-200 cursor-pointer hover:scale-[1.1] w-full h-full object-cover"
                   />
                 </div>
-                <div className="flex flex-col p-2 cursor-pointer">
-                  <h4 className="font-cormorant font-[700] text-black text-xl">
+                <div className="flex flex-col p-2 py-2 cursor-pointer">
+                  <h4 className="font-cormorant font-[700] text-black sm:text-xl text-sm">
                     {item.title}
                   </h4>
-                  <div className="flex flex-row items-center gap-1">
+                  <div className="flex flex-row items-center sm:gap-1 gap-0">
                     <div className="flex flex-row ">
                       {[...Array(item.stars)].map((_, i) => (
                         <img
                           key={i}
                           src={star}
-                          alt="Stars"
-                          className="w-[15px] h-[15px]"
+                          alt="Stars" 
+                          className="sm:w-[15px] w-[10px] sm:h-[15px] h-[10px]"
                         />
                       ))}
                     </div>
-                    <span>({item.ratings})</span>
+                    <span className="font-cormorant font-[600] text-black sm:text-xl text-sm">({item.ratings})</span>
                   </div>
                 </div>
               </div>
